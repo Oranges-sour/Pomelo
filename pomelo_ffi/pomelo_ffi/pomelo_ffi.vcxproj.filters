@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="easyx.h">
+      <Filter>ffi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="shell32.lib">
+      <Filter>SrcLib</Filter>
+    </Library>
+    <Library Include="User32.Lib">
+      <Filter>SrcLib</Filter>
+    </Library>
+    <Library Include="EasyXw.lib">
+      <Filter>SrcLib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SrcLib">
+      <UniqueIdentifier>{b2ab0a06-4314-45e6-ba04-7264d304255c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="clang_format">
+      <UniqueIdentifier>{25cbbf8c-9397-4824-aee5-1a89c1ec23c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ffi">
+      <UniqueIdentifier>{cbf39862-59c0-490d-b17b-dc1d9c7fefc8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_clang-format">
+      <Filter>clang_format</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PomeloLib.cpp">
+      <Filter>ffi</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
